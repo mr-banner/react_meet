@@ -1,0 +1,154 @@
+.more-feature-section {
+  justify-content: space-between;
+  margin-top: 40px;
+  padding: 0px var(--pading-inline-section) 0;
+  gap: 40px;
+}
+
+.more-feature-section-2 {
+  justify-content: space-between;
+  margin-top: 40px;
+  padding: 40px var(--pading-inline-section) 0;
+  gap: 40px;
+}
+
+.f1-left img {
+  width: 500px;
+  height: 500px;
+}
+
+.f1-right > li {
+  list-style: none;
+  cursor: pointer;
+}
+
+.f1-right > h3 {
+  font-size: 3rem;
+  margin-top: 10px;
+  width: 66%;
+}
+
+.f1-right .left {
+  width: 100%;
+}
+
+div#line {
+  height: 3px;
+  width: 100%;
+  margin-block: 50px;
+}
+
+div#line > div {
+  height: 100%;
+  float: left;
+}
+
+div#red {
+  width: 33.3%;
+  background-color: red;
+}
+
+div#yellow {
+  width: 33.3%;
+  background-color: var(--acent-color);
+}
+
+div#blue {
+  width: 33.3%;
+  background-color: rgb(105, 105, 255);
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .more-feature {
+    padding: 0px 25px;
+  }
+  .more-feature-2 {
+    padding: 0px 25px;
+  }
+
+  .more-feature-section {
+    margin-top: 0px;
+    gap: 90px;
+  }
+
+  .f1-left img {
+    width: 350px;
+    height: 350px;
+  }
+
+  .f1-right > h3 {
+    font-size: 2.5rem;
+    width: 60%;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .f1-left img {
+    width: 310px;
+    height: 310px;
+  }
+
+  .f1-right > h3 {
+    font-size: 2rem;
+    width: 85%;
+  }
+
+  .more-feature-2 {
+    padding: 0px 10px;
+  }
+
+  .more-feature-section {
+    margin-top: 0px;
+    gap: 69px;
+  }
+
+  .more-feature {
+    padding: 0px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .more-feature-section {
+    flex-direction: column;
+    margin-top: 0;
+    gap: 10px;
+  }
+
+  .f1-right {
+    text-align: center;
+  }
+
+  .f1-left img {
+    width: 350px;
+    height: 350px;
+  }
+
+  .f1-right > h3 {
+    width: 100%;
+    font-size: 2.5rem;
+  }
+
+  .secondary-btn {
+    width: 100%;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.59rem;
+  }
+
+  .more-feature-section-2 {
+    flex-direction: column;
+    margin-top: 0;
+    gap: 30px;
+  }
+
+  .more-feature{
+    padding: 0 5px;
+  }
+
+  .more-feature-2{
+    padding: 0 5px;
+  }
+}

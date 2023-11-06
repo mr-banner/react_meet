@@ -1,0 +1,159 @@
+.sub-footer .content-top {
+  flex-direction: column;
+}
+
+h1 {
+  margin-top: 20px;
+}
+
+h2 {
+  color: var(--seconday-text-color);
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.content-bottom {
+  margin-top: 100px;
+  gap: 10px;
+}
+
+.content-bottom > .org > p {
+  margin-top: 10px;
+  width: 50%;
+}
+
+.links > h5 {
+  color: var(--seconday-text-color);
+  font-family: "Poppins", sans-serif !important ;
+  font-style: normal !important;
+  font-size: 16px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  margin-top: -125px;
+  width: 40%;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  margin-top: -130px;
+  width: 15%;
+}
+
+.social > h5 {
+  color: var(--seconday-text-color);
+  font-family: "Poppins", sans-serif !important ;
+  font-style: normal !important;
+  font-size: 16px;
+}
+
+.social a {
+  font-size: 1.35rem;
+  color: var(--secondary-text-color);
+  padding-right: 12px;
+  background: transparent;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.social a:hover {
+  color: var(--acent-color);
+  transform: scale(1.1);
+}
+
+.socail-links {
+  display: flex;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .content-top > h1 {
+    width: 60%;
+    font-size: 3rem;
+    margin-bottom: 5px;
+  }
+
+  .content-bottom {
+    margin-top: 60px;
+  }
+
+  .sub-footer {
+    padding: 0px 25px;
+  }
+
+  .social a {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .content-bottom {
+    margin-top: 65px;
+  }
+
+  .links {
+    margin-top: -120px;
+  }
+
+  .social {
+    width: 25%;
+    margin-top: -125px;
+  }
+
+  h1 {
+    margin-top: 10px;
+  }
+
+  .sub-footer {
+    padding: 0px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem !important;
+  }
+
+  .sub-footer {
+    margin-top: -40px;
+  }
+
+  h2 {
+    font-size: 1.5rem !important;
+  }
+
+  .content-bottom > .org > p {
+    margin-top: 10px;
+    width: 100%;
+    font-size: 0.9rem;
+    line-height: 20px;
+  }
+
+  .content-bottom{
+    margin-top: 60px;
+  }
+  
+  .links {
+    margin-top: -145px;
+    width: 50%;
+    display: none;
+  }
+
+  .social {
+    margin-top: -85px;
+    width: 100%;
+    margin-left: 30px;
+  }
+  
+  .social > h5 {
+    font-size: 14px;
+  }
+
+  .social a {
+    font-size: 1.5rem;
+    padding-right: 10px;
+  }
+}

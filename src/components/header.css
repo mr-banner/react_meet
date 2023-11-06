@@ -1,0 +1,142 @@
+header{
+    padding: 50px var(--pading-inline-section) 0;
+}
+
+h1{
+    font-size: 3rem;
+    line-height: 65px;
+}
+
+h1>span{
+    color: var(--acent-color);
+}
+
+h4{
+    color: rgb(250, 110, 110);
+    font-style: italic;
+    font-family: cursive;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    color: var(--seconday-text-color);
+    line-height: 1.9rem;
+    margin-block: 30px;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+.header-section{
+    justify-content: center;
+    gap: 50px;
+}
+
+.header-left{
+    max-width: 40vw;
+}
+
+.header-left h1{
+    margin-top: 20px;
+}
+
+.header-right img{
+    width: 100%;
+}
+
+
+@media (min-width:769px) and (max-width:1024px){
+    header{
+        padding: 50px 25px;
+    }
+
+    h4{
+        font-size:14px;
+    }
+
+    h1{
+        font-size: 2.4rem;
+        line-height: 50px;
+        width: 85%;
+    }
+
+    p{
+        margin-block: 25px;
+    }
+
+    .header-section{
+        justify-content: unset;
+        gap: 80px;
+    }
+
+    .header-right img{
+        width: 450px;
+    }
+    
+}
+
+@media (min-width:481px) and (max-width:768px){
+
+    header{
+        padding: 50px 10px;
+    }
+    .header-right img{
+        width: 420px;
+    }
+
+    h4{
+        font-size:13px;
+    }
+
+    h1{
+        font-size: 2rem;
+        line-height: 45px;
+    }
+
+    .header-section{
+        gap: 10px;
+    }
+
+    p{
+        font-size: 1rem;
+        margin-block: 20px;
+    }
+}
+
+@media (max-width: 480px){
+
+    header{
+        padding: 40px 0px;
+    }
+    .header-section{
+        justify-content: space-between;
+        gap: 30px;
+    }
+    h4{
+        font-size:16px;
+    }
+
+    .header-section{
+        flex-direction: column-reverse;
+    }
+
+    .header-left{
+        max-width: 100vw;
+        text-align: center;
+    }
+
+    .header-right img{
+        width: 400px;
+    }
+
+    .primary-btn {
+        width: 100%;
+    }
+
+    h1{
+        font-size: 2.2rem !important;
+        line-height: 45px;
+    }
+}

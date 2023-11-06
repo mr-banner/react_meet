@@ -1,0 +1,18 @@
+.footer-content{
+    justify-content: center;
+}
+
+.footer{
+    background-color:  #dde1e4;
+    padding: var(--pading-inline-section) 0px;
+}
+
+.footer-content p{
+    margin: 0;
+}
+
+@media (max-width: 480px){
+    /* .footer-content p{
+        font-size: 0.8rem;
+    } */
+}

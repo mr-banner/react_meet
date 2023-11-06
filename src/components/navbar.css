@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-text-color: #080808;
+  --seconday-text-color: #797e84;
+  --acent-color: #fcbd00;
+  --acent-color-dark: #050505;
+  --pading-inline-section: 20px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--primary-text-color);
+  width: 100vw;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1250px;
+  padding-inline: var(--pading-inline-section);
+  margin-inline: auto;
+  overflow: hidden;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.primary-btn {
+  border-radius: 6px;
+  color: white !important;
+  background-color: var(--acent-color);
+  font-weight: 500;
+  box-shadow: 0 0 2px var(--acent-color-dark);
+  text-align: center;
+  padding: 12px 24px;
+  transition: 0.2s ease-out;
+}
+
+.primary-btn:hover {
+  background-color: var(--acent-color-dark);
+  box-shadow: 5px 5px 8px var(--acent-color-dark);
+  cursor: pointer;
+}
+
+.secondary-btn {
+  border-radius: 6px;
+  border: 0.5px solid var(--seconday-text-color);
+  font-weight: 600;
+  padding: 12px 24px;
+  transition: 0.2s ease-out;
+  color: var(--primary-text-color) !important;
+}
+
+.secondary-btn:hover {
+  color: var(--acent-color) !important;
+  border-color: var(--acent-color);
+}
+
+.main-nav {
+  margin-top: 20px;
+  justify-content: space-between;
+  position: relative;
+}
+
+.company-logo img {
+  width: 200px;
+  height: 50px;
+}
+
+.nav-links ul {
+  justify-content: end;
+  gap: 40px;
+}
+
+.nav-links {
+  flex-basis: 730px;
+}
+
+ul > li > a {
+  color: var(--seconday-text-color);
+  font-size: 16px;
+  transition: all ease-in-out 0.4s;
+}
+
+ul > li > a:hover {
+  color: var(--acent-color);
+  cursor: pointer;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .company-logo img {
+    width: 170px;
+    height: 40px;
+  }
+
+  .main-nav {
+    justify-content: unset;
+  }
+
+  nav {
+    padding: 0px 25px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  nav {
+    padding: 0px 10px;
+  }
+
+  .company-logo img {
+    margin-top: 16px;
+    width: 165px;
+    height: 45px;
+  }
+
+  .primary-btn {
+    padding: 8px 16px;
+  }
+
+  .secondary-btn {
+    padding: 8px 16px;
+  }
+
+  .main-nav {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .company-logo img {
+    width: 125px;
+    height: 40px;
+  }
+
+  .main-nav {
+    margin-top: 10px;
+  }
+  .nav-toggle {
+    display: block;
+  }
+
+  .main-nav {
+    overflow: initial;
+    padding: 0px 25px;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: -100%;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    padding-block: 45px;
+    transition: 0.4s ease-in-out;
+  }
+
+  .nav-links.active {
+    left: 0;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+  }
+}
